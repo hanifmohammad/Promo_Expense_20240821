@@ -1,0 +1,8 @@
+ALTER TABLE `skf-bq-analytics-hub.mrep_skf.skf_live_sm_invoice_head`
+SET OPTIONS (
+    require_partition_filter = TRUE
+);
+
+
+ALTER TABLE `skf-bq-analytics-hub.mrep_skf.skf_live_sm_invoice_head`
+SET OPTIONS (max_staleness = INTERVAL 15 MINUTE);
